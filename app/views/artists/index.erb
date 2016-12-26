@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Artist Index</h1>
+    <% @artists.each do |artist| %>
+    <ul>
+      <li>
+        <%=artist.name%>
+        <%id=artist.slug%>
+        <a href="/artists/<%=id%>">click here to go to Artist</a>
+      </li>
+    </ul>
+    <%end%>
+
+  </body>
+</html>
